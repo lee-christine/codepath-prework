@@ -6,7 +6,7 @@ Submitted by: **Christine Lee**
 
 Time spent: **6** hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: (https://glitch.com/edit/#!/childish-fate-thunbergia?path=README.md%3A1%3A0)
 
 ## Required Functionality
 
@@ -49,13 +49,21 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 [YOUR ANSWER HERE]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
+Near the end of the project, I had to code a guess function that runs every time the player clicks a button. The function is used to make sure that the game responds properly after each move, either ending the game or playing the next clue sequence when appropriate. I used the flow chart as a guide to write the conditional logic inside the guess function, walking through the logic of the diagram and translating it into code. However, when I tested the game, it was not functioning properly – the game was ending even when I played the correct sequence. I realized that I was running the loseGame function every time the guess function was called because none of the functions inside the if statements contained a return statement and the code doesn’t exit out of the function, so I had to implement nested if statements. After rearranging my code, I walked through my logic and steps to make sure it would work properly.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
+**How do I make sure my website is accessible to users?** How do I think about the users that will be using my product and how do I make sure that they will be able to use it smoothly? (ex. changing the colors to address color blindness)
+**How do I organize my code?** As more features are added and the code gets more complicated, what are some best practices for organizing the code and providing good documentation?
+**How do I test for bugs?** The game works well now, but what if there are unknown bugs? How do I run tests to cover every potential case?
+**How do I optimize web applications to work as efficiently as possible?** How do I make sure that stuff is working efficiently and not taking too much memory and time especially as I keep adding more features?
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
+If I had a few more hours to work on this project, I would complete the couple of optional features I did not get to, including the countdown timer to limit the amount of time the player has to make a guess. I would do more research into the setInterval and clearInterval functions and figure out how to apply them to creating a timer that starts and stops at the proper moments.
+Additionally, there are some more features that I would want to implement. I would add a progress bar so players can see how far they’ve progressed in the game and how close they are to finishing it. I could implement this by changing the length of the bar after each turn to be a constant multiplied by a variable that keeps track of how many clues have been guessed correctly so far. I would also adjust the tones that the buttons play when clicked so that I can create more melodic patterns. I’d add a mistake counter that is visible throughout the game for players to check and know how many more mistakes they’re allowed to make before they lose the game. I have already created a counter for the mistakes when I implemented the feature of allowing players to make 2 mistakes without penalty, so I would just need to display this variable.
+
 
 
 
